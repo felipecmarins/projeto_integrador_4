@@ -24,4 +24,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HELIOS_APP_INTEGRADOR }}'
           channelId: live
-          projectId: projetointegrador4-79738
+          projectId: projetointegrador4-79738-650e8
