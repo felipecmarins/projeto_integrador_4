@@ -8,8 +8,11 @@ export default function Calculator() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de cálculo simplificada com custo fixo de R$ 1.00/kWh
-    const monthlySavings = (consumption * 1 * fraction ).toFixed(2);
+    // Lógica de cálculo atualizada: Economia = Consumo * 1 (R$/kWh) * Fração
+    // Assumindo que a fração é inserida como decimal (ex: 0.5 para 50%) ou o cálculo trata isso.
+    // Se a fração for porcentagem (ex: 50), o usuário deve digitar 0.5 ou ajustamos aqui.
+    // Baseado no seu snippet, a fórmula é direta.
+    const monthlySavings = (consumption * 1 * fraction).toFixed(2);
     setSavings(monthlySavings);
   };
 
@@ -28,7 +31,7 @@ export default function Calculator() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="fraction">Fração do Consórcio</label>
+          <label htmlFor="fraction">Fração do Consórcio (ex: 0.5 para 50%)</label>
           <input
             type="number"
             id="fraction"
