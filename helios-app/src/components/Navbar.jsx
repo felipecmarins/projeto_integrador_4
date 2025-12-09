@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import heliosLogo from "../assets/logo.svg";
+import heliosLogo from "../assets/logo helios.jpg";
 
 export default function Navbar() {
   return (

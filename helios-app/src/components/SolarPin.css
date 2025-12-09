@@ -1,0 +1,10 @@
+.solar-pin {
+  background-color: #ffc700;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #ffc700, 0 0 20px #ffc700;
+}

@@ -2,10 +2,10 @@ import TeamMemberCard from "../components/TeamMemberCard";
 import "./Team.css";
 
 // Importando as imagens da equipe
-import gabrielImage from "../assets/gabriel.jpg";
-import victorImage from "../assets/victor.jpg";
+import gabrielImage from "../assets/gabriel.png";
+import vitorImage from "../assets/vitor.png";
 import anaImage from "../assets/ana.jpg";
-import felipeImage from "../assets/felipe.jpg";
+import felipeImage from "../assets/felipe.jpeg";
 
 const teamMembers = [
   {
@@ -16,11 +16,11 @@ const teamMembers = [
     imageUrl: gabrielImage,
   },
   {
-    name: "Victor",
+    name: "Vitor",
     role: "Responsável Técnico (Solar Energy)",
     bio: "Engenheiro especialista e a mente brilhante por trás dos parques solares. Ele supervisiona a eficiência dos painéis e a integridade da rede, garantindo que cada raio de sol seja convertido em economia máxima para os cooperados.",
     quote: "Fluente em Volts, Amperes e sabe a diferença entre AC e DC sem precisar ouvir a banda.",
-    imageUrl: victorImage,
+    imageUrl: vitorImage,
   },
   {
     name: "Ana",
