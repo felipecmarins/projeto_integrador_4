@@ -3,14 +3,13 @@ import "./Calculator.css";
 
 export default function Calculator() {
   const [consumption, setConsumption] = useState("");
-  const [cost, setCost] = useState("");
-  const [sunlight, setSunlight] = useState("");
+  const [fraction, setFraction] = useState("");
   const [savings, setSavings] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de cálculo (exemplo simples)
-    const monthlySavings = (consumption * cost * sunlight * 0.1).toFixed(2);
+    // Lógica de cálculo simplificada com custo fixo de R$ 1.00/kWh
+    const monthlySavings = (consumption * 1 * fraction * 0.1).toFixed(2);
     setSavings(monthlySavings);
   };
 
@@ -29,23 +28,13 @@ export default function Calculator() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="cost">Custo da Energia (R$/kWh)</label>
+          <label htmlFor="fraction">Fração do Consórcio</label>
           <input
             type="number"
-            id="cost"
+            id="fraction"
             step="0.01"
-            value={cost}
-            onChange={(e) => setCost(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="sunlight">Horas de Sol por Dia</label>
-          <input
-            type="number"
-            id="sunlight"
-            value={sunlight}
-            onChange={(e) => setSunlight(e.target.value)}
+            value={fraction}
+            onChange={(e) => setFraction(e.target.value)}
             required
           />
         </div>
