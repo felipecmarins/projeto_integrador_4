@@ -1,0 +1,17 @@
+.team-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-page h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
