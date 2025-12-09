@@ -9,7 +9,7 @@ export default function Calculator() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Lógica de cálculo simplificada com custo fixo de R$ 1.00/kWh
-    const monthlySavings = (consumption * 1 * fraction * 0.1).toFixed(2);
+    const monthlySavings = (consumption * 1 * fraction ).toFixed(2);
     setSavings(monthlySavings);
   };
 

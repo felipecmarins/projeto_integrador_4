@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import heliosLogo from "../assets/logo helios.jpg";
+import newLogo from "../assets/new-logo.svg";
 
 export default function Navbar() {
   return (
     <nav>
       <div className="logo">
         <NavLink to="/">
-          <img src={heliosLogo} alt="Helios Logo" style={{ height: '50px' }} />
+          <img src={newLogo} alt="Helios Logo" style={{ height: '50px' }} />
         </NavLink>
       </div>
       <ul>

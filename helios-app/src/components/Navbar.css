@@ -3,8 +3,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  font-family: var(--heading-font);
 }
 
 nav ul {
@@ -17,14 +18,16 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 .logo {
@@ -37,13 +40,14 @@ nav ul li a.active {
   background-color: var(--primary-color);
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .cta-button:hover {
-  background-color: #047857; /* Emerald-700 */
+  background-color: var(--secondary-color);
 }
