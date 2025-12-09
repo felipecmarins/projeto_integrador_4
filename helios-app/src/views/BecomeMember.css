@@ -1,39 +1,93 @@
 .become-member-page {
   padding: 2rem;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: auto;
 }
 
-.become-member-page h1 {
+.hero-section {
   text-align: center;
-  color: var(--primary-color);
+  padding: 3rem 1rem;
+  background-color: #f0f7ff;
+  border-radius: 8px;
   margin-bottom: 2rem;
 }
 
-.become-member-form {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
 }
 
-.become-member-form .form-group {
-  margin-bottom: 1.5rem;
+.hero-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
 }
 
-.become-member-button {
-  width: 100%;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
+.cta-button {
+  background-color: #ffc700;
+  color: #003366;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.business-model-section .steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.step {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.differentiators-section .differentiators {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.differentiator {
+  background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.become-member-button:hover {
-  background-color: #047857; /* Emerald-700 */
+.simulation-section .simulation {
+  background-color: #f0f7ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.simulation .result {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.who-can-join-section ul, .faq-section .faq-item, .footer-section > div {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.footer-section > div {
+  flex: 1;
 }
