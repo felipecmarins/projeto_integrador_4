@@ -1,13 +1,14 @@
 .hero {
   text-align: center;
   padding: 4rem 1rem;
-  background-color: #f4f7f6; /* Cor de fundo suave */
+  background-color: var(--background-color);
 }
 
 .hero h1 {
   font-size: 3rem;
-  color: #2c3e50;
+  color: var(--text-color);
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
 }
 
 .hero p {
@@ -15,12 +16,12 @@
   max-width: 600px;
   margin: 0 auto 2rem auto;
   line-height: 1.6;
-  color: #34495e;
+  color: var(--text-color);
 }
 
 .cta-button {
-  background-color: #ffc700; /* Amarelo solar */
-  color: #2c3e50;
+  background-color: var(--primary-color);
+  color: white;
   padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
@@ -30,7 +31,7 @@
 }
 
 .cta-button:hover {
-  background-color: #ffb800; /* Amarelo um pouco mais escuro */
+  background-color: var(--secondary-color);
 }
 
 /* Estilos para a seção do mapa */
@@ -41,15 +42,27 @@
 
 .map-section h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--text-color);
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
 }
 
 .map-section p {
   font-size: 1.2rem;
-  color: #34495e;
+  color: var(--text-color);
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Media Query para Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }

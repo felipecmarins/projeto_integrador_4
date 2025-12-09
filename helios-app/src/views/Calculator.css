@@ -8,6 +8,7 @@
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 2rem;
+  font-family: var(--heading-font);
 }
 
 .calculator-form {
@@ -27,7 +28,7 @@
 
 .form-group label {
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .calculate-button:hover {
-  background-color: #047857; /* Emerald-700 */
+  background-color: var(--secondary-color);
 }
 
 .results {
@@ -64,7 +65,7 @@
 }
 
 .results h2 {
-  color: #333;
+  color: var(--text-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -73,4 +74,16 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--primary-color);
+}
+
+/* Media Query para Mobile */
+@media (max-width: 768px) {
+  .calculator-form {
+    grid-template-columns: 1fr; /* Muda para uma única coluna */
+    padding: 1.5rem;
+  }
+
+  .calculate-button {
+    grid-column: span 1; /* Ocupa a única coluna disponível */
+  }
 }

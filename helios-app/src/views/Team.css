@@ -6,13 +6,14 @@
 
 .team-page h1 {
   font-size: 3rem;
-  color: #2c3e50;
+  color: var(--text-color);
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
 }
 
 .team-intro {
   font-size: 1.2rem;
-  color: #34495e;
+  color: var(--text-color);
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
@@ -24,4 +25,15 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
+}
+
+/* Media Query para Mobile */
+@media (max-width: 768px) {
+  .team-page h1 {
+    font-size: 2.2rem;
+  }
+  
+  .team-members {
+    gap: 1.5rem;
+  }
 }
