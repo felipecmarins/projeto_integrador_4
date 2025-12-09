@@ -2,12 +2,34 @@ import { NavLink } from "react-router-dom";
 import Map from "../components/Map"; // Importando o componente do mapa
 import "./Home.css";
 
-// Dados das fazendas solares
+// Função para gerar coordenadas aleatórias próximas a um ponto
+const generateRandomPoints = (center, count, radius) => {
+  const points = [];
+  for (let i = 0; i < count; i++) {
+    const lat = center[0] + (Math.random() - 0.5) * radius;
+    const lng = center[1] + (Math.random() - 0.5) * radius;
+    points.push({
+      position: [lat, lng],
+      name: `Unidade Solar SP-${i + 1}`,
+      price: (Math.random() * (1.00 - 0.50) + 0.50).toFixed(2),
+    });
+  }
+  return points;
+};
+
+// Coordenadas de São Paulo
+const saoPauloCenter = [-23.55052, -46.633308];
+
+// Gerar 30 pins aleatórios em São Paulo (raio de aprox. 0.2 graus)
+const saoPauloPoints = generateRandomPoints(saoPauloCenter, 30, 0.2);
+
+// Dados das fazendas solares (Principais capitais + Pontos de SP)
 const solarFarms = [
+  ...saoPauloPoints,
   {
     position: [-23.55052, -46.633308],
-    name: "Fazenda Solar de São Paulo",
-    price: (Math.random() * (1.00 - 0.50) + 0.50).toFixed(2),
+    name: "Matriz Helios São Paulo",
+    price: "0.65",
   },
   {
     position: [-22.906847, -43.172896],
